@@ -1,0 +1,59 @@
+public class Animal{
+
+    private String raça;
+    private String nome;
+    private Date dataNascimento;
+    private Pessoa dono;
+    private String alergias;
+
+    public Animal(String raça, String nome, Date dataNascimento, Pessoa dono, String alergias) {
+        this.raça = raça;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.dono = dono;
+        this.alergias = alergias;
+    }
+
+    public Animal() {
+    }
+
+    public String getRaça() {
+        return raça;
+    }
+
+    public void setRaça(String raça) {
+        this.raça = raça;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public Pessoa getDono() {
+        return dono;
+    }
+
+    public void setDono(Pessoa dono) {
+        this.dono = dono;
+    }
+
+    public String getAlergias() {
+        return alergias;
+    }
+
+    public void setAlergias(String alergias) {
+        this.alergias = alergias;
+    }
+}
