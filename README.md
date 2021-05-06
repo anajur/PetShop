@@ -1,1 +1,1 @@
-# PetShop 🐱
+# PetShop. 🐱
