@@ -1,0 +1,49 @@
+public class Atendimento{
+
+    private Animal animal;
+    private List<Servicos> servicoList;
+    private Date diaAtendimento;
+    private double preco;
+
+    public Atendimento(Animal animal, List<Servicos> servicoList, Date diaAtendimento, double preco) {
+        this.animal = animal;
+        this.servicoList = servicoList;
+        this.diaAtendimento = diaAtendimento;
+        this.preco = preco;
+    }
+
+    public Atendimento() {
+    }
+
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(Animal animal) {
+        this.animal = animal;
+    }
+
+    public List<Servicos> getServicoList() {
+        return servicoList;
+    }
+
+    public void setServicoList(List<Servicos> servicoList) {
+        this.servicoList = servicoList;
+    }
+
+    public Date getDiaAtendimento() {
+        return diaAtendimento;
+    }
+
+    public void setDiaAtendimento(Date diaAtendimento) {
+        this.diaAtendimento = diaAtendimento;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+}
