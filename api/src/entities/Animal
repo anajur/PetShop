@@ -1,3 +1,8 @@
+package entities;
+
+import java.util.Date;
+
+
 public class Animal{
 
     private String raça;
@@ -5,16 +10,26 @@ public class Animal{
     private Date dataNascimento;
     private Pessoa dono;
     private String alergias;
+    private String sexo;
 
-    public Animal(String raça, String nome, Date dataNascimento, Pessoa dono, String alergias) {
+    public Animal(String raça, String nome, Date dataNascimento, Pessoa dono, String alergias, String sexo) {
         this.raça = raça;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.dono = dono;
         this.alergias = alergias;
+        this.sexo = sexo;
     }
 
     public Animal() {
+    }
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 
     public String getRaça() {

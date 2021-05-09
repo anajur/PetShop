@@ -1,11 +1,13 @@
+package entities;
+
+import java.util.List;
+
 public class PetShop{
 
     private List<Atendimento> atendimentoList;
-    private String name = "Dog Caramelo";
 
-    public PetShop(List<Atendimento> atendimentoList, String name) {
+    public PetShop(List<Atendimento> atendimentoList) {
         this.atendimentoList = atendimentoList;
-        this.name = name;
     }
 
     public PetShop() {
@@ -18,12 +20,5 @@ public class PetShop{
     public void setAtendimentoList(List<Atendimento> atendimentoList) {
         this.atendimentoList = atendimentoList;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    
 }

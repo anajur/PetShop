@@ -1,5 +1,6 @@
-public class Endereco{
+package entities;
 
+public class Endereco{
     private String cidade;
     private String bairro;
     private int numero;

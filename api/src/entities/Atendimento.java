@@ -1,3 +1,10 @@
+package entities;
+
+import enums.Servicos;
+
+import java.util.Date;
+import java.util.List;
+
 public class Atendimento{
 
     private Animal animal;

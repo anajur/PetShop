@@ -1,4 +1,8 @@
-public class Pessoa{
+package entities;
+
+import java.util.List;
+
+public class Pessoa {
 
     private String nomeCompleto;
     private int celular;
