@@ -11,12 +11,21 @@ public class Atendimento{
     private List<Servicos> servicoList;
     private Date diaAtendimento;
     private double preco;
+    private boolean encerrado;
 
     public Atendimento(Animal animal, List<Servicos> servicoList, Date diaAtendimento, double preco) {
         this.animal = animal;
         this.servicoList = servicoList;
         this.diaAtendimento = diaAtendimento;
         this.preco = preco;
+    }
+
+    public boolean isEncerrado() {
+        return encerrado;
+    }
+
+    public void setEncerrado(boolean encerrado) {
+        this.encerrado = encerrado;
     }
 
     public Atendimento() {
