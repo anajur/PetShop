@@ -1,43 +1,56 @@
 package entities;
 
+
 import java.util.Date;
 
+import enums.Especie;
+import enums.Sexo;
 
-public class Animal{
+public class Animal {
 
-    private String raça;
+    private String raca;
     private String nome;
     private Date dataNascimento;
     private Pessoa dono;
     private String alergias;
-    private String sexo;
+    private Sexo sexo;
+    private Especie especie;
 
-    public Animal(String raça, String nome, Date dataNascimento, Pessoa dono, String alergias, String sexo) {
-        this.raça = raça;
+    public Animal(String raca, String nome, Date dataNascimento, Pessoa dono, String alergias, Sexo sexo, Especie especie) {
+        this.raca = raca;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.dono = dono;
         this.alergias = alergias;
         this.sexo = sexo;
+        this.especie = especie;
+    }
+
+    public Especie getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(Especie especie) {
+        this.especie = especie;
     }
 
     public Animal() {
     }
 
-    public String getSexo() {
+    public Sexo getSexo() {
         return sexo;
     }
 
-    public void setSexo(String sexo) {
+    public void setSexo(Sexo sexo) {
         this.sexo = sexo;
     }
 
-    public String getRaça() {
-        return raça;
+    public String getRaca() {
+        return raca;
     }
 
-    public void setRaça(String raça) {
-        this.raça = raça;
+    public void setRaca(String raca) {
+        this.raca = raca;
     }
 
     public String getNome() {

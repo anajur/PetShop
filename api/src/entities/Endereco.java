@@ -1,16 +1,26 @@
 package entities;
 
-public class Endereco{
+public class Endereco {
     private String cidade;
     private String bairro;
     private int numero;
     private int cep;
+    private String complemento;
 
-    public Endereco(String cidade, String bairro, int numero, int cep) {
+    public Endereco(String cidade, String bairro, int numero, int cep, String complemento) {
         this.cidade = cidade;
         this.bairro = bairro;
         this.numero = numero;
         this.cep = cep;
+        this.complemento = complemento;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public void setComplemento(String complemento) {
+        this.complemento = complemento;
     }
 
     public Endereco() {

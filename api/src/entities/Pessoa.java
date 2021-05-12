@@ -1,17 +1,16 @@
 package entities;
 
 import java.util.List;
-
 public class Pessoa {
 
     private String nomeCompleto;
-    private int celular;
+    private String celular;
     private String email;
     private Endereco endereco;
     private String cpf;
     private List<Animal> animalList;
 
-    public Pessoa(String nomeCompleto, int celular, String email, Endereco endereco, String cpf, List<Animal> animalList) {
+    public Pessoa(String nomeCompleto, String celular, String email, Endereco endereco, String cpf, List<Animal> animalList) {
         this.nomeCompleto = nomeCompleto;
         this.celular = celular;
         this.email = email;
@@ -31,11 +30,11 @@ public class Pessoa {
         this.nomeCompleto = nomeCompleto;
     }
 
-    public int getCelular() {
+    public String getCelular() {
         return celular;
     }
 
-    public void setCelular(int celular) {
+    public void setCelular(String celular) {
         this.celular = celular;
     }
 
