@@ -1,0 +1,10 @@
+﻿Nome: Ana Júlia da Rosa e Leonardo Martini
+Turma: 3K
+Requisitos:
+* Cadastrar cliente;
+* Cadastrar animal do cliente;
+* Cadastrar um atendimento; 
+* Encerrar atendimento;
+
+
+O sistema é para gerenciar atendimentos de um PetShop. O usuário irá cadastrar um cliente e seu animais, depois um atendimento. Então o animal será inserido na fila de atendimento e após o término será encerrado e exibido o valor.

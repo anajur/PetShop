@@ -1,6 +1,7 @@
 package entities;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import enums.Especie;
@@ -10,13 +11,13 @@ public class Animal {
 
     private String raca;
     private String nome;
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
     private Pessoa dono;
     private String alergias;
     private Sexo sexo;
     private Especie especie;
 
-    public Animal(String raca, String nome, Date dataNascimento, Pessoa dono, String alergias, Sexo sexo, Especie especie) {
+    public Animal(String raca, String nome, LocalDate dataNascimento, Pessoa dono, String alergias, Sexo sexo, Especie especie) {
         this.raca = raca;
         this.nome = nome;
         this.dataNascimento = dataNascimento;
@@ -61,11 +62,11 @@ public class Animal {
         this.nome = nome;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

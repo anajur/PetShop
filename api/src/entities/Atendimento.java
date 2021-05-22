@@ -2,23 +2,28 @@ package entities;
 
 import enums.Servicos;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Atendimento {
-
+	
     private Animal animal;
-    private List<Servicos> servicoList;
-    private Date diaAtendimento;
-    private double preco;
-    private boolean encerrado;
+    private Servicos servicoSelecionado;
+    private LocalDate diaAtendimento;
+    private Double preco;
+    private Boolean encerrado;
 
-    public Atendimento(Animal animal, List<Servicos> servicoList, Date diaAtendimento, double preco) {
+    public Atendimento(Animal animal, LocalDate diaAtendimento, Double preco, Servicos servicoSelecionado) {
         this.animal = animal;
-        this.servicoList = servicoList;
         this.diaAtendimento = diaAtendimento;
         this.preco = preco;
+        this.servicoSelecionado = servicoSelecionado;
+        this.encerrado = false;
     }
+    
+    public Atendimento() {}
 
     public boolean isEncerrado() {
         return encerrado;
@@ -26,9 +31,6 @@ public class Atendimento {
 
     public void setEncerrado(boolean encerrado) {
         this.encerrado = encerrado;
-    }
-
-    public Atendimento() {
     }
 
     public Animal getAnimal() {
@@ -39,27 +41,27 @@ public class Atendimento {
         this.animal = animal;
     }
 
-    public List<Servicos> getServicoList() {
-        return servicoList;
-    }
-
-    public void setServicoList(List<Servicos> servicoList) {
-        this.servicoList = servicoList;
-    }
-
-    public Date getDiaAtendimento() {
+    public LocalDate getDiaAtendimento() {
         return diaAtendimento;
     }
 
-    public void setDiaAtendimento(Date diaAtendimento) {
+    public void setDiaAtendimento(LocalDate diaAtendimento) {
         this.diaAtendimento = diaAtendimento;
     }
 
-    public double getPreco() {
+    public Double getPreco() {
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }
+
+	public Servicos getServicoSelecionado() {
+		return servicoSelecionado;
+	}
+
+	public void setServicoSelecionado(Servicos servicoSelecionado) {
+		this.servicoSelecionado = servicoSelecionado;
+	}
 }

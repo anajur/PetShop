@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 public class Pessoa {
 
@@ -8,7 +9,7 @@ public class Pessoa {
     private String email;
     private Endereco endereco;
     private String cpf;
-    private List<Animal> animalList;
+    private List<Animal> animalList = new ArrayList<>();
 
     public Pessoa(String nomeCompleto, String celular, String email, Endereco endereco, String cpf, List<Animal> animalList) {
         this.nomeCompleto = nomeCompleto;
@@ -20,6 +21,7 @@ public class Pessoa {
     }
 
     public Pessoa() {
+    	
     }
 
     public String getNomeCompleto() {
