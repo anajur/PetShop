@@ -88,7 +88,7 @@ public class AtendimentoController {
 		System.out.println("Digite a data de nascimento do seu animal no formato dd/mm/yyyy");
 		resposta = teclado.next();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		LocalDate date = LocalDate.parse(resposta,formatter);
+		LocalDate date = LocalDate.parse(resposta, formatter);
 		animal.setDataNascimento(date);
 
 		animal.setDono(pessoa);
@@ -124,15 +124,19 @@ public class AtendimentoController {
 
 	public Atendimento finalizarAtendimento() {
 		Atendimento finalizado = atendimentoList.getFirst();
-		System.out.print("Valor total a pagar: R$ %.2f" + finalizado.getPreco() + "\n");
+		System.out.printf("Valor total a pagar: R$ %.2f\n", finalizado.getPreco());
 		System.out.println("Obrigado e volte sempre!");
 		finalizado.setEncerrado(true);
 		return atendimentoList.removeFirst();
 	}
 
 	public void verAtendimentos() {
+		if (atendimentoList.size() == 0) {
+			System.out.println("A lista está vazia!");
 
-		System.out.println(atendimentoList.toString());
+		} else {
+			System.out.println(atendimentoList.toString());
+		}
 
 	}
 

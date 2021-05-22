@@ -65,7 +65,7 @@ public class Atendimento {
 	@Override
 	public String toString() {
 		return "Atendimento [animal=" + animal + ", servicoSelecionado=" + servicoSelecionado + ", diaAtendimento="
-				+ diaAtendimento + ", preco=" + preco + ", encerrado=" + encerrado + "]";
+				+ diaAtendimento + ", preco=" + preco + ", encerrado=" + encerrado + "]\n";
 	}
 
 }
