@@ -61,10 +61,6 @@ public class AtendimentoController {
 		resposta = teclado.nextLine();
 		endereco.setComplemento(resposta);
 
-		System.out.println("Seu cpf:");
-		resposta = teclado.nextLine();
-		pessoa.setCpf(resposta);
-
 		System.out.println("Nome do seu animal:");
 		resposta = teclado.next();
 		animal.setNome(resposta);
