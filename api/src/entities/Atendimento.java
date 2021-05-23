@@ -2,64 +2,70 @@ package entities;
 
 import enums.Servicos;
 
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
 
 public class Atendimento {
 
-    private Animal animal;
-    private List<Servicos> servicoList;
-    private Date diaAtendimento;
-    private double preco;
-    private boolean encerrado;
+	private Animal animal;
+	private Servicos servicoSelecionado;
+	private LocalDate diaAtendimento;
+	private Double preco;
+	private Boolean encerrado = false;
 
-    public Atendimento(Animal animal, List<Servicos> servicoList, Date diaAtendimento, double preco) {
-        this.animal = animal;
-        this.servicoList = servicoList;
-        this.diaAtendimento = diaAtendimento;
-        this.preco = preco;
-    }
+	public Atendimento(Animal animal, LocalDate diaAtendimento, Double preco, Servicos servicoSelecionado) {
+		this.animal = animal;
+		this.diaAtendimento = diaAtendimento;
+		this.preco = preco;
+		this.servicoSelecionado = servicoSelecionado;
+	}
 
-    public boolean isEncerrado() {
-        return encerrado;
-    }
+	public Atendimento() {
+	}
 
-    public void setEncerrado(boolean encerrado) {
-        this.encerrado = encerrado;
-    }
+	public boolean isEncerrado() {
+		return encerrado;
+	}
 
-    public Atendimento() {
-    }
+	public void setEncerrado(boolean encerrado) {
+		this.encerrado = encerrado;
+	}
 
-    public Animal getAnimal() {
-        return animal;
-    }
+	public Animal getAnimal() {
+		return animal;
+	}
 
-    public void setAnimal(Animal animal) {
-        this.animal = animal;
-    }
+	public void setAnimal(Animal animal) {
+		this.animal = animal;
+	}
 
-    public List<Servicos> getServicoList() {
-        return servicoList;
-    }
+	public LocalDate getDiaAtendimento() {
+		return diaAtendimento;
+	}
 
-    public void setServicoList(List<Servicos> servicoList) {
-        this.servicoList = servicoList;
-    }
+	public void setDiaAtendimento(LocalDate diaAtendimento) {
+		this.diaAtendimento = diaAtendimento;
+	}
 
-    public Date getDiaAtendimento() {
-        return diaAtendimento;
-    }
+	public Double getPreco() {
+		return preco;
+	}
 
-    public void setDiaAtendimento(Date diaAtendimento) {
-        this.diaAtendimento = diaAtendimento;
-    }
+	public void setPreco(Double preco) {
+		this.preco = preco;
+	}
 
-    public double getPreco() {
-        return preco;
-    }
+	public Servicos getServicoSelecionado() {
+		return servicoSelecionado;
+	}
 
-    public void setPreco(double preco) {
-        this.preco = preco;
-    }
+	public void setServicoSelecionado(Servicos servicoSelecionado) {
+		this.servicoSelecionado = servicoSelecionado;
+	}
+
+	@Override
+	public String toString() {
+		return "Atendimento [animal=" + animal + ", servicoSelecionado=" + servicoSelecionado + ", diaAtendimento="
+				+ diaAtendimento + ", preco=" + preco + ", encerrado=" + encerrado + "]\n";
+	}
+
 }

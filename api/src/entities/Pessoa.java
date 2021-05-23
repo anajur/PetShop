@@ -1,72 +1,83 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
+
 public class Pessoa {
 
-    private String nomeCompleto;
-    private String celular;
-    private String email;
-    private Endereco endereco;
-    private String cpf;
-    private List<Animal> animalList;
+	private String nomeCompleto;
+	private String celular;
+	private String email;
+	private Endereco endereco;
+	private String cpf;
+	private List<Animal> animalList = new ArrayList<>();
 
-    public Pessoa(String nomeCompleto, String celular, String email, Endereco endereco, String cpf, List<Animal> animalList) {
-        this.nomeCompleto = nomeCompleto;
-        this.celular = celular;
-        this.email = email;
-        this.endereco = endereco;
-        this.cpf = cpf;
-        this.animalList = animalList;
-    }
+	public Pessoa(String nomeCompleto, String celular, String email, Endereco endereco, String cpf,
+			List<Animal> animalList) {
+		this.nomeCompleto = nomeCompleto;
+		this.celular = celular;
+		this.email = email;
+		this.endereco = endereco;
+		this.cpf = cpf;
+		this.animalList = animalList;
+	}
 
-    public Pessoa() {
-    }
+	public Pessoa() {
 
-    public String getNomeCompleto() {
-        return nomeCompleto;
-    }
+	}
 
-    public void setNomeCompleto(String nomeCompleto) {
-        this.nomeCompleto = nomeCompleto;
-    }
+	public String getNomeCompleto() {
+		return nomeCompleto;
+	}
 
-    public String getCelular() {
-        return celular;
-    }
+	public void setNomeCompleto(String nomeCompleto) {
+		this.nomeCompleto = nomeCompleto;
+	}
 
-    public void setCelular(String celular) {
-        this.celular = celular;
-    }
+	public String getCelular() {
+		return celular;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public Endereco getEndereco() {
-        return endereco;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
+	public Endereco getEndereco() {
+		return endereco;
+	}
 
-    public String getCpf() {
-        return cpf;
-    }
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
+	public String getCpf() {
+		return cpf;
+	}
 
-    public List<Animal> getAnimalList() {
-        return animalList;
-    }
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
-    public void setAnimalList(List<Animal> animalList) {
-        this.animalList = animalList;
-    }
+	public List<Animal> getAnimalList() {
+		return animalList;
+	}
+
+	public void setAnimalList(List<Animal> animalList) {
+		this.animalList = animalList;
+	}
+
+	@Override
+	public String toString() {
+		return "Pessoa [nomeCompleto=" + nomeCompleto + ", celular=" + celular + ", email=" + email + ", endereco="
+				+ endereco + ", cpf=" + cpf + "]";
+	}
+
 }
